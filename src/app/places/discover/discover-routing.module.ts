@@ -9,9 +9,13 @@ const routes: Routes = [
     component: DiscoverPage
   },
   {
-    path: 'place-detail',
+    path: ':placeID',
     loadChildren: () => import('./place-detail/place-detail.module').then( m => m.PlaceDetailPageModule)
-  }
+  },
+  // {
+  //   path: 'place-detail',
+  //   loadChildren: () => import('./place-detail/place-detail.module').then( m => m.PlaceDetailPageModule)
+  // }
 ];
 
 @NgModule({
