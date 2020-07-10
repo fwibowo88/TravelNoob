@@ -5,6 +5,7 @@ import { IonItemSliding } from '@ionic/angular';
 import { BookingService } from './booking.service';
 import { Booking } from './booking.model';
 
+
 @Component({
   selector: 'app-bookings',
   templateUrl: './bookings.page.html',
@@ -26,5 +27,7 @@ export class BookingsPage implements OnInit {
     slidingBookingList.close();
     console.log('Booking ID :', bookingID);
   }
+
+
 
 }
