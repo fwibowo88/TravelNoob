@@ -84,7 +84,7 @@ export class PlaceDetailPage implements OnInit {
     this.modalCtrl
     .create({
       component: CreateBookingComponent,
-      componentProps: { selectedHotel: this.place }
+      componentProps: { selectedHotel: this.place, selectedMode: mode }
     })
     .then(modalEl => {
       modalEl.present();
